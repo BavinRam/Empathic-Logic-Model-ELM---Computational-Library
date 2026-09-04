@@ -2480,11 +2480,11 @@ def h15_strategic_deception_constraint(d_coherence_dt_given_deceptive_why):
 
 
 # =============================================================================
-# Appendix E — Preliminary Operationalization of IVP and PIC
+# Appendix — Preliminary Operationalization of IVP and PIC
 # =============================================================================
 
 def f_affect_interrupt(T, elm_mode_engaged_to_defer_interpretation_pending_context):
-    """Construct: f_affect-interrupt — Appendix E.
+    """Construct: f_affect-interrupt — Appendix.
     Equation implemented:
         f_affect-interrupt = | { t in T :
             ELM mode engaged to defer interpretation pending context } |
@@ -2495,7 +2495,7 @@ def f_affect_interrupt(T, elm_mode_engaged_to_defer_interpretation_pending_conte
 
 
 def tau_why_maintained(t_resolution_minus_t_why_generation, expectation):
-    """Construct: tau_why-maintained — Appendix E.
+    """Construct: tau_why-maintained — Appendix.
     Equation implemented:
         tau_why-maintained = E[ t_resolution - t_why-generation ]
     The expectation operator's estimator is not specified in the source, so
@@ -2507,7 +2507,7 @@ def tau_why_maintained(t_resolution_minus_t_why_generation, expectation):
 
 
 def ivp_proxy(f_affect_interrupt_value, tau_why_maintained_value):
-    """Construct: IVP_proxy — Appendix E.
+    """Construct: IVP_proxy — Appendix.
     Equation implemented:
         IVP_proxy = ( f_affect-interrupt, tau_why-maintained )
     """
@@ -2518,7 +2518,7 @@ def ivp_proxy(f_affect_interrupt_value, tau_why_maintained_value):
 
 def pic_proxy_reduction(pic_proxy_decreasing, f_affect_interrupt_increasing,
                         tau_why_maintained_increasing):
-    """Construct: PIC reduction proxy — Appendix E.
+    """Construct: PIC reduction proxy — Appendix.
     Equation implemented (biconditional):
         PIC_proxy down   <=>   f_affect-interrupt up
                                AND  tau_why-maintained up
@@ -2559,7 +2559,7 @@ NOT_IMPLEMENTED = {
     "Narrative neuroscience and neural-coupling context (Section 4)": _NOT_IMPLEMENTED_MSG,
     "Developmental Encoding theoretical narratives (Section 5; the four equations ARE implemented)": _NOT_IMPLEMENTED_MSG,
     "Training and Implementation narrative (Section 6 intro; Section 6.2; Section 6.3 narrative)": _NOT_IMPLEMENTED_MSG,
-    "Illustrative Applications (Section 7; Appendix B)": _NOT_IMPLEMENTED_MSG,
+    "Illustrative Applications (Section 7)": _NOT_IMPLEMENTED_MSG,
     "Boundary-conditions narrative (Section 8 intro and per-constraint narratives; the boundary-condition equations ARE implemented)": _NOT_IMPLEMENTED_MSG,
     "Summary of Boundary Conditions and Limitations (Section 8.2)": _NOT_IMPLEMENTED_MSG,
     "Theoretical Contributions (Section 9; cross-reference table only, no new constructs)": _NOT_IMPLEMENTED_MSG,
@@ -2569,20 +2569,19 @@ NOT_IMPLEMENTED = {
     "Empirical Grounding mechanism list (Section 11.3)": _NOT_IMPLEMENTED_MSG,
     "Directions for Future Research narratives (Section 11.4; hypotheses H1-H15 ARE implemented)": _NOT_IMPLEMENTED_MSG,
     "Conclusion (Section 12)": _NOT_IMPLEMENTED_MSG,
-    "Declarations and Disclosures (Section 13; Appendix D)": _NOT_IMPLEMENTED_MSG,
+    "Declarations and Disclosures (Section 13)": _NOT_IMPLEMENTED_MSG,
     "References": _NOT_IMPLEMENTED_MSG,
-    "Appendix C (literature cross-references)": _NOT_IMPLEMENTED_MSG,
-    "Appendix E qualitative narrative (the proxy equations ARE implemented)": _NOT_IMPLEMENTED_MSG,
+    "Appendix qualitative narrative (the proxy equations ARE implemented)": _NOT_IMPLEMENTED_MSG,
 }
 
-# Appendices F-Q ("Full-Stack Turing Deadlock", "Dark Horizon", "Event
+# Appendices ("Full-Stack Turing Deadlock", "Dark Horizon", "Event
 # Horizon", Multi-Agent Simulation, "Nightmare Mode", "Malicious Actor",
 # "Omnicrisis", "Double-Bind", "Semantic Asymmetry", "Degraded Medium",
 # "Byzantine Omnicrisis", Quick Reference Guide): SKIPPED — excluded from
 # formalization per the source document's own scope constraint ("contain
 # internal stress-testing prompts and summary reference materials, not ELM
 # theoretical-architecture constructs").
-APPENDICES_F_TO_Q_STATUS = "SKIPPED (excluded per source scope constraint)"
+APPENDICES_STATUS = "SKIPPED (excluded per source scope constraint)"
 
 
 # =============================================================================
@@ -2733,11 +2732,11 @@ CONSTRUCT_COVERAGE = {
     "H13 (11.4.1)": "h13_relational_stability",
     "H14 (11.4.1)": "h14_longitudinal_identity_shift",
     "H15 (11.4.1)": "h15_strategic_deception_constraint",
-    # Appendix E
-    "f_affect-interrupt (Appendix E)": "f_affect_interrupt",
-    "tau_why-maintained (Appendix E)": "tau_why_maintained",
-    "IVP_proxy (Appendix E)": "ivp_proxy",
-    "PIC_proxy biconditional (Appendix E)": "pic_proxy_reduction",
+    # Appendix
+    "f_affect-interrupt (Appendix)": "f_affect_interrupt",
+    "tau_why-maintained (Appendix)": "tau_why_maintained",
+    "IVP_proxy (Appendix)": "ivp_proxy",
+    "PIC_proxy biconditional (Appendix)": "pic_proxy_reduction",
 }
 
 
